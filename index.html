@@ -1,0 +1,125 @@
+<!--a image displayer using online images from unsplash api-->
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--call boostrap from cdn-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <!--ad a favicon from url-->
+
+    <title>Gallery</title>
+    <!--get scroll reveal js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/3.0.3/scrollreveal.min.js"></script>
+    <!--conect to stylecss-->
+    <link rel="stylesheet" href="style.css" />
+    <!--get fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--get animate css cdn 4.1.1-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!--import a modern google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700"
+      rel="stylesheet"
+    />
+    <!--import google font Bebas Neue-->
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <!--conect to main.js-->
+    <script src="/Gallery/main.js"></script>
+  </head>
+  <body class="animate__bounceInRight">
+    <!--a nav bar with a hamburger menu-->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <i id="camera" class="fa fa-camera-retro white fa-3x"></i>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--a h1 text with the world Gallery in the center using flex in black color-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="text-center">
+            <i style="text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+            0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+            0 1px 3px, 0 10px 10px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.5);" class="fa fa-camera-retro fa-3x"></i>
+            <p>¡Welcome to Gallery!</p>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!--a tags bar with 12 tags-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <ul class="nav nav-tabs">
+            <li class="active modernShadow"><a href="#">All</a></li>
+            <li class="modernShadow"><a href="#">Fashion</a></li>
+            <li class="modernShadow"><a href="#">Nature</a></li>
+            <li class="modernShadow"><a href="#">People</a></li>
+            <li class="modernShadow"><a href="#">Travel</a></li>
+            <li class="modernShadow"><a href="#">Winter</a></li>
+            <li class="modernShadow"><a href="#">Programming</a></li>
+            <li class="modernShadow"><a href="#">Music</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--a bar for search filters-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <!--a minimalist search bar positioned in the center-->
+          <form style="display: flex; justify-content: center; justify-self: center; justify-items: center;" class="form-inline">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search..."
+                aria-describedby="basic-addon1"
+              />
+              <span
+                class="input-group-addon"
+                id="basic-addon1"
+              >
+                <i class="fa fa-search"></i>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <main class="">
+    </main>
+  </body>
+</html>
