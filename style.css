@@ -151,11 +151,13 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);;
     border-radius: 10px;
 }
 body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
     height: 50%;
 }
 /*style the scroll bar usin mozilla pseudo class*/
@@ -165,11 +167,13 @@ body::-moz-scrollbar {
 }
 body::-moz-scrollbar-track {
     -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
 }
 body::-moz-scrollbar-thumb {
     border-radius: 10px;
     -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 /*style the scroll bar usin IE*/
 body::-ms-scrollbar {
@@ -178,11 +182,13 @@ body::-ms-scrollbar {
 }
 body::-ms-scrollbar-track {
     -ms-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
 }
 body::-ms-scrollbar-thumb {
     border-radius: 10px;
     -ms-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 /*set the possible needed media queries*/
 @media (max-width: 996px){

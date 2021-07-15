@@ -30,6 +30,7 @@ function createGallery() {
     choose(700, 1300);
   img.draggable = false;
   img.loading ="lazy";
+  img.alt = img.src;
   var caption = document.createElement("div");
   caption.className = "caption";
   var h3 = document.createElement("h3");
