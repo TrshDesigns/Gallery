@@ -1,0 +1,22 @@
+{
+    "name": "Development Glossary",
+    "short_name": "Glossary",
+    "start_url": "https://sad-mcclintock-8c1c7b.netlify.app/",
+    "icons":[
+      {
+        "src": "resources/images/android-chrome-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "resources/images/android-chrome-512x512.png",
+        "sizes": "512x512"
+      }
+    ]
+    ,"theme_color": "#e1306c",
+    "background_color": "#e1306c",
+    "display": "fullscreen",
+    "orientation": "any"
+    }
+    
+    
+    

@@ -12,33 +12,34 @@ function choose(min, max) {
 /*a function to create this element <div class="col-md-4">*/
 function createGallery() {
   var loading = document.createElement("img");
-  loading.src = "/resources/__Iphone-spinner-1.gif";
+  loading.src = "/resources/images/loader.gif";
   loading.className = "loading";
   var gallery = document.createElement("div");
   gallery.className = "col-md-4";
   var thumbnail = document.createElement("div");
   thumbnail.className = "thumbnail";
-  thumbnail.style.display = "flex";
-  thumbnail.style.flexDirection = "column";
   var img = document.createElement("img");
   img.className = "galeryImage";
-  img.style.borderRadius = "10px";
   img.src =
     "https://source.unsplash.com/random/" +
-    choose(700, 1300) +
+    choose(900, 1900) +
     "x" +
-    choose(700, 1300);
+    choose(900, 1900);
   img.draggable = false;
   img.loading ="lazy";
   img.alt = img.src;
   var caption = document.createElement("div");
   caption.className = "caption";
   var h3 = document.createElement("h3");
+  var download = document.createElement("a")
+  download.className = "download";
+  ///make the download href equal to the current image src
+  download.href = img.src;
   var downloadBtn = document.createElement("I");
-  downloadBtn.className = "fa fa-download fa-1x downloadBtn";
-  ///change the text of h3 and p to image and random image
-  h3.innerHTML = "Image";
-  h3.style.marginLeft = "10px";
+  downloadBtn.className = "fa fa-download fa-2x downloadBtn";
+  downloadBtn.href = img.src;
+  h3.innerHTML = "Download";
+  h3.className = "imageDownload";
   caption.innerHTML = "Random Image";
   var heart = document.createElement("I");
   heart.className = "fa fa-heart heart fa-2x";
@@ -47,9 +48,10 @@ function createGallery() {
   thumbnail.appendChild(loading)
   caption.appendChild(heart);
   caption.appendChild(shareBtn);
-  h3.appendChild(downloadBtn)
+  h3.appendChild(download)
+  download.appendChild(downloadBtn);
   img.onload = function () {
-    loading.style.display = "none";
+    loading.remove();
   }
   thumbnail.appendChild(img);
   thumbnail.appendChild(caption);
