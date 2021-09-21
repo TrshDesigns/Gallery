@@ -1,10 +1,12 @@
 /*disable text selection in the body*/
 body {
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  scroll-behavior: smooth;
+  scroll-snap-align:start;
 }
 .loading {
   z-index: 2;
@@ -15,17 +17,18 @@ body {
   height: 50px;
   border-radius: 100%;
 }
-
+.col-md-4 {
+  display: flex;
+  justify-content: center;
+}
 .galeryimage {
   z-index: 1;
-  border-radius:10px;
+  border-radius: 10px;
 }
-#welcomeCameraLogo{
-
-    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
-    0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0),
-    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px,
-    0 10px 10px rgba(0, 0, 0, 0), 0 5px 10px rgba(7, 0, 0, 0);
+#welcomeCameraLogo {
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px, 0 10px 10px rgba(0, 0, 0, 0), 0 5px 10px rgba(7, 0, 0, 0);
 }
 /*create a thumbnail class and add a on hover effect */
 .thumbnail {
@@ -43,8 +46,8 @@ body {
   min-width: 300px;
   min-height: 400px;
   position: relative;
-  margin: 20px auto 20px auto;
-  animation:backInDown 1.5s ease-in-out;
+  margin: 100px auto 100px auto;
+  animation: backInDown 1.5s ease-in-out;
   display: flex;
   flex-direction: column;
 }
@@ -55,14 +58,14 @@ body {
   z-index: 2;
 }
 .thumbnail:nth-child(0) {
-    margin-top: 10px;
-  }
-  .thumbnail:nth-child(1) {
-    margin-top: 10px;
-  }
-  .thumbnail:nth-child(2) {
-    margin-top: 10px;
-  }
+  margin-top: 10px;
+}
+.thumbnail:nth-child(1) {
+  margin-top: 10px;
+}
+.thumbnail:nth-child(2) {
+  margin-top: 10px;
+}
 .heart {
   color: #fd1d1d;
   border-radius: 100%;
@@ -73,16 +76,16 @@ body {
   -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
 }
-.imageDownload{
-    text-decoration:underline solid rgb(196, 196, 196);
-    color:rgb(104, 104, 104);
-    margin-left:19px;
-    font-size:18px;
+.imageDownload {
+  text-decoration: underline solid rgb(196, 196, 196);
+  color: rgb(104, 104, 104);
+  margin-left: 19px;
+  font-size: 18px;
 }
-.caption{
-    font-size:19.5px;
-    font-weight: lighter;
-    margin-left:10px;
+.caption {
+  font-size: 19.5px;
+  font-weight: lighter;
+  margin-left: 10px;
 }
 .galeryimage:active {
   z-index: 2;
@@ -112,7 +115,7 @@ body {
     0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px, 0 10px 10px rgba(0, 0, 0, 0.2),
     0 5px 10px rgba(0, 0, 0, 0.5);
   position: fixed;
-  color:white;
+  color: white;
   z-index: 3;
 }
 .modernShadow {
@@ -235,25 +238,4 @@ body::-ms-scrollbar-thumb {
     0 1px 1px rgba(0, 0, 0, 0.1), 0 0 0px rgba(0, 0, 0, 0.1), 0 0px 0px,
     0 10px 10px rgba(59, 41, 41, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-}
-/*set the possible needed media queries*/
-@media (max-width: 990px) {
-  .thumbnail {
-    margin: 190px;
-  }
-}
-@media (max-width: 800px) {
-  .thumbnail {
-    margin: 30px 160px 30px 160px;
-  }
-}
-@media (max-width: 600px) {
-  .thumbnail {
-    margin: 30px 80px 30px 80px;
-  }
-}
-@media (max-width: 450px) {
-  .thumbnail {
-    margin: 30px 40px 30px 40px;
-  }
 }

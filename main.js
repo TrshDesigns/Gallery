@@ -3,12 +3,11 @@ function choose(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 /* a function that detects the scroll and calls the append image function*/
-  window.onscroll = function () {
+window.onscroll = function () {
   if (document.body.scrollTop > -0.01) {
-    createGallery();
+    createGallery()
   }
 };
-
 /*a function to create this element <div class="col-md-4">*/
 function createGallery() {
   var loading = document.createElement("img");
@@ -26,12 +25,12 @@ function createGallery() {
     "x" +
     choose(900, 1900);
   img.draggable = false;
-  img.loading ="lazy";
+  img.loading = "lazy";
   img.alt = img.src;
   var caption = document.createElement("div");
   caption.className = "caption";
   var h3 = document.createElement("h3");
-  var download = document.createElement("a")
+  var download = document.createElement("a");
   download.className = "download";
   ///make the download href equal to the current image src
   download.href = img.src;
@@ -45,14 +44,14 @@ function createGallery() {
   heart.className = "fa fa-heart heart fa-2x";
   var shareBtn = document.createElement("I");
   shareBtn.className = "fa fa-share-alt fa-2x shareBtn";
-  thumbnail.appendChild(loading)
+  thumbnail.appendChild(loading);
   caption.appendChild(heart);
   caption.appendChild(shareBtn);
-  h3.appendChild(download)
+  h3.appendChild(download);
   download.appendChild(downloadBtn);
   img.onload = function () {
     loading.remove();
-  }
+  };
   thumbnail.appendChild(img);
   thumbnail.appendChild(caption);
   thumbnail.appendChild(h3);
