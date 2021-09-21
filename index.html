@@ -36,6 +36,16 @@
 </head>
 
 <body>
+  <!--add servoce worker if service worker on navigator-->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js', {
+        scope: './'
+      }).then(function(reg) {
+        console.log('Service Worker Registered');
+      });
+    }
+  </script>
   <a class="navbar-brand" href="#">
     <i id="camera" class="fa fa-camera-retro fa-3x"></i>
   </a>
