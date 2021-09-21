@@ -4,11 +4,11 @@
     "start_url": "https://epic-morse-1f8214.netlify.app/",
     "icons":[
       {
-        "src": "resources/images/android-chrome-192x192.png",
+        "src": "/resources/images/android-chrome-192x192.png",
         "sizes": "192x192"
       },
       {
-        "src": "resources/images/android-chrome-512x512.png",
+        "src": "/resources/images/android-chrome-512x512.png",
         "sizes": "512x512"
       }
     ]
