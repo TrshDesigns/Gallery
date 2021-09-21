@@ -1,7 +1,7 @@
 {
-    "name": "Development Glossary",
-    "short_name": "Glossary",
-    "start_url": "https://sad-mcclintock-8c1c7b.netlify.app/",
+    "name": "Gallery",
+    "short_name": "Gallery",
+    "start_url": "https://epic-morse-1f8214.netlify.app/",
     "icons":[
       {
         "src": "resources/images/android-chrome-192x192.png",
