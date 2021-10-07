@@ -17,17 +17,10 @@ function createGallery() {
   gallery.className = "col-md-4";
   var thumbnail = document.createElement("div");
   thumbnail.className = "thumbnail";
-  thumbnail.style.margin = margin + "px";
+  thumbnail.style.margin = 25 + "px";
   var img = document.createElement("img");
   img.className = "galeryImage";
-  img.src =
-    "https://source.unsplash.com/random/" +
-    choose(900, 1000) +
-    "x" +
-    choose(900, 1000);
-  img.draggable = false;
-  img.loading = "lazy";
-  img.alt = img.src;
+  img.src = "https://source.unsplash.com/random/" + choose(900, 1000) + "x" + choose(900, 1000);
   var caption = document.createElement("div");
   caption.className = "caption";
   var h3 = document.createElement("h3");
