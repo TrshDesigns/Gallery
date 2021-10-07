@@ -5,7 +5,7 @@ function choose(min, max) {
 /* a function that detects the scroll and calls the append image function*/
 window.onscroll = function () {
   if (document.body.scrollTop > -0.01) {
-    createGallery()
+    createGallery();
   }
 };
 /*a function to create this element <div class="col-md-4">*/
@@ -17,13 +17,14 @@ function createGallery() {
   gallery.className = "col-md-4";
   var thumbnail = document.createElement("div");
   thumbnail.className = "thumbnail";
+  thumbnail.style.margin = margin + "px";
   var img = document.createElement("img");
   img.className = "galeryImage";
   img.src =
     "https://source.unsplash.com/random/" +
-    choose(900, 1900) +
+    choose(900, 1000) +
     "x" +
-    choose(900, 1900);
+    choose(900, 1000);
   img.draggable = false;
   img.loading = "lazy";
   img.alt = img.src;
