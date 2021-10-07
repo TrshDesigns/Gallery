@@ -17,7 +17,7 @@ function createGallery() {
   gallery.className = "col-md-4";
   var thumbnail = document.createElement("div");
   thumbnail.className = "thumbnail";
-  thumbnail.style.margin = 25 + "px";
+  thumbnail.style.margin = 55 + "px";
   var img = document.createElement("img");
   img.className = "galeryImage";
   img.src = "https://source.unsplash.com/random/" + choose(900, 1000) + "x" + choose(900, 1000);

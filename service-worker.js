@@ -8,7 +8,7 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
 	({request}) => request.destination === 'style',
-	new workbox.strategies.NetworkFrist()
+	new workbox.strategies.NetworkFirst()
 	
 );
 
