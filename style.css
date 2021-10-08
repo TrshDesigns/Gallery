@@ -31,14 +31,10 @@ body {
 /*create a thumbnail class and add a on hover effect */
 .thumbnail {
   padding: 8px;
-  background-color: rgb(255, 255, 255);
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 20px;
   /*add a modern shadow effect*/
-  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow:  6px 6px 12px #f2f2f2,-6px -6px 12px #ffffff;
   margin: 50px;
   animation: backInDown 1.5s ease-in-out;
   display: flex;
@@ -60,14 +56,15 @@ body {
   margin-top: 10px;
 }
 .heart {
-  color: #fd1d1d;
+  color: #e9185d;
   border-radius: 100%;
   text-align: center;
-  left: 10px;
+  margin-left:30px;
+  padding:10px;
   /*add a soft 3d shadow*/
-  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
 }
 .imageDownload {
   text-decoration: underline solid rgb(196, 196, 196);
@@ -126,15 +123,22 @@ body {
 .downloadBtn {
   color: #fff;
   text-align: center;
-  border-radius: 100%;
+  border-radius: 50%;
+  height: 32px;
   cursor: pointer;
   margin-left: 10px;
-  background-color: #212121;
+  background-color: #000;
 }
 .shareBtn {
+  width:60px;
   color: #000;
-  margin-left: 10px;
+  margin-left: 2px;
+  padding:10px;
+  border-radius:110%;
   cursor: pointer;
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
 }
 .cold-md-4 {
   width: 500px;
