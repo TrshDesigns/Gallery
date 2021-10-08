@@ -18,6 +18,7 @@ body {
   align-items: center;
 }
 .galeryimage {
+  transition:all ease-in-out 0.1s;
   z-index: 1;
   border-radius: 40px;
   border: solid 25px white;
@@ -78,11 +79,16 @@ body {
   margin-left: 10px;
 }
 .galeryimage:active {
+  transition:all ease-in-out 0.1s;
   z-index: 2;
-  transform: scale(1.5);
+  transform: scale(1.2);
+  border:10px;
   /*add a box shadow simulating that the object is floating*/
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius:5px;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 img:out-of-range {
   display: none;

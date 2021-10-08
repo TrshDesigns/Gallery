@@ -26,7 +26,7 @@ function createGallery() {
   var h3 = document.createElement("h3");
   var download = document.createElement("a");
   download.className = "download";
-  ///make the download href equal to the current image src
+  ///make the download href equal to the current selected galery img src
   download.href = img.src;
   var downloadBtn = document.createElement("I");
   downloadBtn.className = "fa fa-download fa-2x downloadBtn";
