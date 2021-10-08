@@ -101,7 +101,8 @@ body {
 }
 #welcomeText {
   font-size: 70px;
-  font-family: "Lalezar", cursive;
+  /*add a fall back font*/
+  font-family: "Lalezar", cursive, sans-serif;
   font-weight: lighter;
   text-align: center;
   margin-top: 20px;
@@ -247,6 +248,7 @@ body::-ms-scrollbar-thumb {
 }
 .fa-search {
   text-shadow: 0 1px 0 #cccccc, 0 1px 0 #c9c9c9, 0 1px 0 #bbb;
+  width:30px;
 }
 #basic-addon1 {
   background-color: #212121;
@@ -264,8 +266,14 @@ body::-ms-scrollbar-thumb {
 .input-group {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0 0.288), 0 1px 2px rgba(0, 0, 0, 0 226);
   border: 4.5px solid #212121;
+  padding:4px;
   border-radius: 10px;
   /*use the font calleda "lalezar"*/
   font-family: "Lalezar", cursive;
   color: #212121;
 }
+@media (max-width:400px){
+  html{color:rgb(197, 158, 158);}
+}
+
+
