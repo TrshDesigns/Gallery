@@ -84,9 +84,8 @@ body {
   transform: scale(1.2);
   border:10px;
   /*add a box shadow simulating that the object is floating*/
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(66, 66, 66, 0.5);
   border-radius:5px;
-  position: absolute;
   top: 0;
   left: 0;
 }
