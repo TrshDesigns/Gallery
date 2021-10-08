@@ -6,25 +6,27 @@ body {
   -ms-user-select: none;
   user-select: none;
   scroll-behavior: smooth;
-  scroll-snap-align:start;
+  scroll-snap-align: start;
 }
 .loading {
-  justify-self:center;
-  align-self:center;
+  justify-self: center;
+  align-self: center;
 }
 .col-md-4 {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 .galeryimage {
   z-index: 1;
-  border-radius: 10px;
+  border-radius: 40px;
+  border: solid 25px white;
 }
 #welcomeCameraLogo {
   text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
     0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0), 0 0 5px rgba(0, 0, 0, 0.1),
     0 1px 3px, 0 10px 10px rgba(0, 0, 0, 0), 0 5px 10px rgba(7, 0, 0, 0);
+  text-rendering: geometricPrecision;
 }
 /*create a thumbnail class and add a on hover effect */
 .thumbnail {
@@ -34,10 +36,10 @@ body {
   -moz-border-radius: 8px;
   border-radius: 20px;
   /*add a modern shadow effect*/
-  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
-  margin:50px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  margin: 50px;
   animation: backInDown 1.5s ease-in-out;
   display: flex;
   flex-direction: column;
@@ -99,12 +101,13 @@ body {
   font-family: "Lalezar", cursive;
   font-weight: lighter;
   text-align: center;
+  margin-top: 20px;
 }
 #camera {
   text-shadow: 0 1px 0 #e1306c, 0 2px 0 #e1306c, 0 3px 0 #e1306c,
     0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
-    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px, 0 10px 10px rgba(0, 0, 0, 0.2),
-    0 5px 10px rgba(0, 0, 0, 0.5);
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px;
+  text-rendering: geometricPrecision;
   position: fixed;
   color: white;
   z-index: 3;
@@ -223,6 +226,22 @@ body::-ms-scrollbar-thumb {
   width: 45vw;
   height: 50px;
   border-radius: 10px;
+  border: none;
+}
+/*change the color of the #searchInput placeholder*/
+#searchInput::placeholder {
+  color: #212121;
+  font-size: 2rem;
+  position: relative;
+  top: 3px;
+}
+.fa-search {
+  text-shadow: 0 1px 0 #cccccc, 0 1px 0 #c9c9c9, 0 1px 0 #bbb;
+}
+#basic-addon1 {
+  background-color: #212121;
+  color: white;
+  border-radius: 10px;
 }
 /*add a overall margin of 10px o the class element form-inline*/
 .form-inline {
@@ -230,9 +249,13 @@ body::-ms-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #212121;
 }
 .input-group {
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0
-    .288), 0 1px 2px rgba(0, 0, 0, 0.
-    226);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0 0.288), 0 1px 2px rgba(0, 0, 0, 0 226);
+  border: 4.5px solid #212121;
+  border-radius: 10px;
+  /*use the font calleda "lalezar"*/
+  font-family: "Lalezar", cursive;
+  color: #212121;
 }
